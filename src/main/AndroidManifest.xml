@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.gemini.google_settings"
-    android:versionCode="1"
+    android:versionCode="2"
     android:versionName="1.0">
 
     <uses-sdk android:minSdkVersion="8" />
@@ -9,6 +9,8 @@
         <activity android:name=".GoogleSettingsActivity"
             android:theme="@android:style/Theme.NoDisplay"
             android:label="Google Settings"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
